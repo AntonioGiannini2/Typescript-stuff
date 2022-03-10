@@ -21,7 +21,7 @@ async function cyclicPrinter(cars: Car[]) {
         console.log("\nInizio popolamento Array\n\n");
         await delay(1000);
         for (i=0; i<cars.length; i++) {
-            console.log(`Car${i+1}`);
+            console.log(`Car ${i+1}`);
             console.log(` Id: ${cars[i].id} \n Marca: ${cars[i].marca} \n Modello: ${cars[i].modello}\n\n`);
             if (i != (cars.length - 1)) {
                 await delay(5000);
